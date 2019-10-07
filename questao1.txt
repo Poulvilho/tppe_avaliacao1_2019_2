@@ -1,0 +1,16 @@
+Questão 1
+
+a) 	Interfaces públicas possuem um menor nível de abstração, possuindo código que pode ser refatorado.
+	Interfaces publicadas possuem um nível de abstração muito maior, como regras de negócio que são divulgadas e que não devem ser refatoradas por estarem sendo usadas por outras pessoas também.
+
+b)	Mudanças divergentes:
+	. Uma classe que sofre várias variações em vários locais dela por motivos de mudanças nas regras de negócio: afeta negativamente pois sempre terá que rever comportamento e cálculos na classe, trocando ela o tempo inteiro sendo que podia mover suas variantes para tratar em outra classe facilitando a manutenção.
+	
+	Cirurgia com rifle:
+	. Uma classe que sofre modificações de forma a afetar vários outros objetos das outras classes: afeta negativamente por ter várias outras classes para observar o comportamente e ser fácil esquecer algo.
+
+c)	Falsa, pois a refatoração busca acima de tudo tornar o código melhor para um ser-humano ler, e não para a máquina executar. Um exemplo disso são as refatoração que envolvem criação de funções, visto que este recurso demanda um alto esforço da máquina.
+
+d)	Quando se mantém o funcionamento do programa, isto é, não mudando o seu comportamento. Uma forma de se garantir isto é com uma suite de testes de confiança, onde antes da refatoração sempre passava, e após a refatoração manteve-se passando.
+
+
